@@ -2,7 +2,7 @@ package se.lexicon;
 
 import java.time.LocalDate;
 
-public class  Appointment {
+public class Appointment {
 
     private int id;
     private String ChangeTires;
@@ -20,7 +20,7 @@ public class  Appointment {
     public Appointment(LocalDate deadLine) {
         this.deadLine = deadLine;
 
-}
+    }
 
     public Appointment(int id) {
         this.id = id;

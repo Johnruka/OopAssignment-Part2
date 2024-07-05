@@ -44,10 +44,8 @@ public class App {
         System.out.println();
 
         // User
-
-
-        AppUser user1 = new AppUser("davis","55555",AppRole.USER);
-        AppUser user2 = new AppUser("John","789546",AppRole.ADMIN);
+        AppUser user1 = new AppUser("davis", "55555", AppRole.USER);
+        AppUser user2 = new AppUser("John", "789546", AppRole.ADMIN);
 
         System.out.println("user information:");
         System.out.println(user1.getUsername());

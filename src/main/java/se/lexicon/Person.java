@@ -13,7 +13,6 @@ public class Person {
     private boolean done;
 
 
-
     private int[] AssignedAppointments;
 
     public Person(int id, String firstName, String lastName, String email) {
@@ -23,7 +22,6 @@ public class Person {
         this.lastName = lastName;
         this.email = email;
         this.AssignedAppointments = new int[0];
-        this.person = person;
 
 
     }
@@ -88,14 +86,13 @@ public class Person {
 
     }
 
-    public Object setAssignee(String appointment) {
+    public void setAssignee(String appointment) {
         int[] newArray = Arrays.copyOf(AssignedAppointments(), AssignedAppointments().length + 1);
         int Appointment = 0;
         newArray[newArray.length - 1] = Appointment;
         AssignedAppointments = newArray;
 
 
-        return null;
     }
 
     private int[] AssignedAppointments() {
@@ -103,6 +100,6 @@ public class Person {
     }
 
 
-    }
+}
 
 
