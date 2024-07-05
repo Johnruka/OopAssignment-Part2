@@ -5,15 +5,14 @@ import java.util.UUID;
 
 public class AutoExpert {
 
-    private int id;
-    private boolean assigned;
+    private final int id;
     private Appointment appointment;
     private Person assignee;
 
     public AutoExpert(int id) {
         this.id = Integer.parseInt(UUID.randomUUID().toString());
         this.appointment = Objects.requireNonNull(appointment, "AppointmentInfo cannot be null");
-        this.assigned = true;
+        boolean assigned = true;
 
     }
 
