@@ -1,32 +1,53 @@
 package se.lexicon;
 
-public abstract class Person {
+public class Person implements AppUser {
 
     private final String name;
     private final AppRole role;
-    private String username;
-    private String password;
 
-    public Person(String name, AppRole role,String username, String password){
+    public Person(String name, AppRole role) {
         this.name = name;
         this.role = role;
-        this.username = username;
-        this.password = password;
+
+
     }
 
+
+    @Override
     public String getUsername() {
         return username;
     }
 
-    public void setUsername(String username){
-        this.username = username;
+    @Override
+    public void setUsername() {
+
     }
 
+    @Override
     public String getPassword() {
-        return password;
+        return "";
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    @Override
+    public void setPassword() {
+
+    }
+
+    @Override
+    public AppRole getRole() {
+        return role;
+    }
+
+    @Override
+    public void setRole() {
+
+    }
+
+    @Override
+    public boolean equals() {
+        return false;
     }
 }
+
+
+
