@@ -2,7 +2,7 @@ package se.lexicon;
 
 import java.time.LocalDate;
 
-public abstract class  Appointment {
+public class  Appointment {
 
     private int id;
     private String ChangeTires;

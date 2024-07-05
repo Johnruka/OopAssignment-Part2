@@ -2,7 +2,7 @@ package se.lexicon;
 
 import java.util.Arrays;
 
-public class Person extends Appointment{
+public class Person {
 
     private final int id;
     public Object setAssigned;
@@ -18,7 +18,6 @@ public class Person extends Appointment{
 
     public Person(int id, String firstName, String lastName, String email) {
         Object deadLine = null;
-        super(LocalDate deadLine);
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -102,5 +101,8 @@ public class Person extends Appointment{
     private int[] AssignedAppointments() {
         return new int[0];
     }
-}
+
+
+    }
+
 
