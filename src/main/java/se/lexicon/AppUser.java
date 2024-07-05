@@ -32,7 +32,8 @@ public class AppUser implements IAppointment {
     }
 
     @Override
-    public void setPassword() {
+    public String setPassword() {
+        return password;
 
     }
 
