@@ -5,7 +5,7 @@ public abstract class Person {
     private final String name;
     private final AppRole role;
     private String username;
-    private final String password;
+    private String password;
 
     public Person(String name, AppRole role,String username, String password){
         this.name = name;
@@ -20,5 +20,13 @@ public abstract class Person {
 
     public void setUsername(String username){
         this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
