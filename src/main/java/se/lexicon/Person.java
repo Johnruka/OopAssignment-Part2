@@ -1,19 +1,20 @@
 package se.lexicon;
 
-public class Person implements AppUser {
+public class Person implements User {
 
     private String name;
-    private AppRole role;
+    private Role role;
 
 
     public Person(String name, String role) {
         this.name = name;
-        this.role = AppRole.valueOf(role);
+        this.role = Role.valueOf(role);
 
 
     }
 
     public Person(Person[] user) {
+
     }
 
 
@@ -46,7 +47,7 @@ public class Person implements AppUser {
     }
 
     @Override
-    public AppRole getRole() {
+    public Role getRole() {
         return role;
     }
 

@@ -1,12 +1,12 @@
 package se.lexicon;
 
-public enum AppRole {
+public enum Role {
     ROLE("user","admin");
 
-    private String user;
-    private String admin;
+    private final String user;
+    private final String admin;
 
-    AppRole(String user,String admin) {
+    Role(String user, String admin) {
         this.user = user;
         this.admin = admin;
 

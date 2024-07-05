@@ -2,11 +2,11 @@ package se.lexicon;
 
 import java.util.Arrays;
 
-public interface AppUser {
+public interface User {
 
     String username = null;
     String password = null;
-    AppRole role = null;
+    Role role = null;
     String credentials = Arrays.toString(new String[]{username, password});
 
 
@@ -20,7 +20,7 @@ public interface AppUser {
 
     String setPassword();
 
-    AppRole getRole();
+    Role getRole();
 
     void setRole();
 
