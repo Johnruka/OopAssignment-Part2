@@ -10,14 +10,24 @@ public interface AppUser {
     String credentials = Arrays.toString(new String[]{username, password});
 
 
-    String getUsername();
-    void setUsername();
+    static String getUsername() {
+        return username;
+    }
+
+    String setUsername();
+
     String getPassword();
-    void setPassword();
+
+    String setPassword();
+
     AppRole getRole();
+
     void setRole();
+
     boolean equals();
+
     int hashCode();
+
     String toString();
 
 }

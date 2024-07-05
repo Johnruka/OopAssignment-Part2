@@ -2,34 +2,46 @@ package se.lexicon;
 
 public class Person implements AppUser {
 
-    private final String name;
-    private final AppRole role;
+    private String name;
+    private AppRole role;
 
-    public Person(String name, AppRole role) {
+
+    public Person(String name, String role) {
         this.name = name;
-        this.role = role;
+        this.role = AppRole.valueOf(role);
 
 
     }
 
+    public Person(Person[] user) {
+    }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return "person: " + name + " , role: " + role;
+    }
 
     @Override
-    public String getUsername() {
+    public String setUsername() {
         return username;
     }
 
     @Override
-    public void setUsername() {
-
-    }
-
-    @Override
     public String getPassword() {
-        return "";
+        return password;
     }
 
     @Override
-    public void setPassword() {
+    public String setPassword() {
+        return password;
 
     }
 
@@ -40,6 +52,7 @@ public class Person implements AppUser {
 
     @Override
     public void setRole() {
+        this.role = role;
 
     }
 
@@ -48,6 +61,3 @@ public class Person implements AppUser {
         return false;
     }
 }
-
-
-
