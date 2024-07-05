@@ -18,7 +18,6 @@ public class  Appointment {
     }
 
     public Appointment(LocalDate deadLine) {
-        this.ChangeTires = ChangeTires;
         this.deadLine = deadLine;
 
 }
@@ -73,13 +72,11 @@ public class  Appointment {
     }
 
     public String isAvailable() {
-        String isAvailable = "isavailabe";
-        return isAvailable;
+        return "available";
     }
 
     public Object setAssignee(String assignee) {
-        Object setAssignee = null;
-        return setAssignee;
+        return null;
     }
 }
 
