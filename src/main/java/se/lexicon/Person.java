@@ -12,6 +12,7 @@ public class Person {
     private Person person;
     private boolean done;
     private AppUser credentials;
+    private AppRole user;
 
 
     private int[] AssignedAppointments;
@@ -23,7 +24,7 @@ public class Person {
         this.lastName = lastName;
         this.email = email;
         this.AssignedAppointments = new int[0];
-        this.credentials = new AppUser(credentials.username, credentials.password,null);
+        this.credentials = new AppUser(AppUser.username, AppUser.password, AppRole.USER);
 
 
     }
@@ -102,6 +103,14 @@ public class Person {
     }
 
 
+    public String toString() {
+        return "credentials{" +
+                "AppRole=" + credentials.role +
+                '}';
+
+
+    }
 }
+
 
 

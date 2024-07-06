@@ -48,10 +48,6 @@ public class App {
         AppUser user2 = new AppUser("John", "789546", AppRole.ADMIN);
 
         System.out.println("user information:");
-        System.out.println(user1.getUsername());
-        System.out.println(user2.getUsername());
-        System.out.println(user1.getPassword());
-        System.out.println(user2.getPassword());
         System.out.println(user1.getRole());
         System.out.println(user2.getRole());
         System.out.println();
