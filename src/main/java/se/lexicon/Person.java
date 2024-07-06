@@ -11,6 +11,7 @@ public class Person {
     private String email;
     private Person person;
     private boolean done;
+    private AppUser credentials;
 
 
     private int[] AssignedAppointments;
@@ -22,6 +23,7 @@ public class Person {
         this.lastName = lastName;
         this.email = email;
         this.AssignedAppointments = new int[0];
+        this.credentials = new AppUser(credentials.username, credentials.password,null);
 
 
     }
