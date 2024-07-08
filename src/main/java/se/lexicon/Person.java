@@ -1,6 +1,7 @@
 package se.lexicon;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Person {
 
@@ -102,11 +103,19 @@ public class Person {
         return new int[0];
     }
 
-
-
-
-
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return id == person.id && done == person.done && Objects.equals(setAssigned, person.setAssigned) && Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && Objects.equals(email, person.email) && user == person.user && Objects.deepEquals(AssignedAppointments, person.AssignedAppointments);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, email, user);
+    }
+}
 
 
 
