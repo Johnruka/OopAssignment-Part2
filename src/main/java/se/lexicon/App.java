@@ -51,8 +51,11 @@ public class App {
         System.out.println(user1.getRole());
         System.out.println(user2.getRole());
         System.out.println();
+        boolean isEqualuser1 = user1.equals(user2);
+        System.out.println(isEqualuser1);
 
     }
+
 }
 
 
