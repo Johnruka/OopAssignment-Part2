@@ -103,14 +103,11 @@ public class Person {
     }
 
 
-    public String toString() {
-        return "credentials{" +
-                "AppRole=" + credentials.role +
-                '}';
+
 
 
     }
-}
+
 
 
 
