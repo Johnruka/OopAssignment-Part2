@@ -53,6 +53,8 @@ public class App {
         System.out.println();
         boolean isEqualuser1 = user1.equals(user2);
         System.out.println(isEqualuser1);
+        System.out.println(user1.hashCode());
+        System.out.println(user2.hashCode());
 
     }
 
